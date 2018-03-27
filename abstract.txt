@@ -1,0 +1,43 @@
+package program5;
+abstract class Area{
+    int a;
+    double pi=3.14;
+    abstract void FindArea();
+    Area(int a){this.a=a;}
+    }
+class Circle extends Area{
+    String FindArea;
+    @Override
+    void FindArea(){
+            System.out.println("circle area is"+pi*a*a);
+    }
+    Circle(int p)
+    {
+ super(p);
+    }
+}
+class Square extends Area{
+    String FindArea;
+    @Override
+    void FindArea()
+    {
+  System.out.println("circle area is"+a*a);
+            }
+    Square(int p)
+    {
+super(p);
+    }
+}
+    public class Program5 {
+    public static void main(String[] args) {
+        Circle c1=new Circle(100);
+        Square s1=new Square(100);
+        c1.FindArea();
+        s1.FindArea();
+        }
+    }
+Ouput:
+run:
+circle area is31400.0
+circle area is10000
+BUILD SUCCESSFUL (total time: 0 seconds)
